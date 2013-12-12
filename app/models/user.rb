@@ -8,7 +8,9 @@ validates :email, presence: true, format: {with: VALID_EMAIL_REGEX}, uniqueness:
 has_secure_password
 validates :password, presence: true, length: { minimum: 6 }
 
-def User.new_remember_token
+
+
+  def User.new_remember_token
     SecureRandom.urlsafe_base64
   end
 
