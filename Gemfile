@@ -12,10 +12,11 @@ gem 'bootstrap-will_paginate', '0.0.9' #Пагинация
 group :development, :test do
   gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'
-  gem 'guard-rspec', '2.5.0'
-  gem 'spork-rails', '4.0.0'
-  gem 'guard-spork', '1.5.0'
-  gem 'childprocess', '0.3.9'
+
+  gem 'guard-rspec', '2.5.0' #Для тестов Guard
+  gem 'spork-rails', '4.0.0' #Для Spork
+  gem 'guard-spork', '1.5.0' #Для Spork
+  gem 'childprocess', '0.3.9' #Для Spork
 end
 
 group :test do
@@ -24,6 +25,7 @@ group :test do
   gem 'factory_girl_rails', '4.2.1'
   gem 'cucumber-rails', '1.4.0', :require => false
   gem 'database_cleaner', github: 'bmabey/database_cleaner'
+  gem 'libnotify', '0.8.0' #Для тестов Guard
 end
 
 gem 'sass-rails', '4.0.1'
